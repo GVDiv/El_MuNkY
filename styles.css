@@ -10,8 +10,9 @@
     list-style-type: none;
     text-decoration: none;
 }
-/* ------------------- Estilos para la navegacion Header --------------------- */
-
+/*----------------------------------------------------------------------------*/
+/* ------------------- Estilos para la navegacion Header -------------------- */
+/*----------------------------------------------------------------------------*/
 /*Estilos para el contenedor Principal*/
 .main_container{
     min-height: 100vh;
@@ -123,12 +124,13 @@ header{
 }
 .nav_icon{
     width: 40px;
-}
-/* ------------ Estilos para el Main Inicio ------------------ */
+}/*--------------------------------------------------------------------------------*/
+/* --------------------------- Estilos para el index.html ---------------------- */
+/*----------------------------------------------------------------------------*/
 .main_home{
 
     display: grid;
-    gap: 2em;
+    /* gap: 2em; */
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
@@ -180,8 +182,10 @@ header{
 }
 .home_img{
    width: 60%;
-}/* ---------------------------- Estilos para acerca_de.html ------------------------ */
-
+}
+/*----------------------------------------------------------------------------*/
+/* ---------------------- Estilos para acerca_de.html ----------------------- */
+/*----------------------------------------------------------------------------*/
 /* Estilos para el Contenido principal */
 .main_about{
     min-height: 500px;
@@ -235,8 +239,9 @@ header{
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
     filter: grayscale(1);
 }
-
+/*------------------------------------------------------------------------------------*/
 /* ---------------------------- Estilos para galeria.html ------------------------ */
+/*--------------------------------------------------------------------------------*/
 /* Estilos para la Galeria */
 .galeria{
 
@@ -321,16 +326,18 @@ header{
     border-radius: 20px;
     font-size: 30px;
 }
-
-
+/*------------------------------------------------------------------------------------*/
 /* ---------------------------- Estilos para el eventos.html ------------------------ */
+/*-----------------------------------------------------------------------------------*/
 /* Estilos para el Contenedor principal */
 .main_blog{
-    min-height: 500px;
-    min-width: 420px;
+    /* min-height: 500px;
+    min-width: 420px; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-top: 20px;
+    align-items: center;
+    justify-items: center;
     background: linear-gradient(#9cc45c 10%, #08cac1 100%);
 
     grid-area: content;
@@ -388,14 +395,14 @@ header{
     object-fit: contain;
     box-shadow: 2px 4px 4px 2px rgba(0, 0, 0, 0.3);
 }
-
-
+/*------------------------------------------------------------------------------------*/
 /* ---------------------------- Estilos para el contacto.html ------------------------ */
+/*-------------------------------------------------------------------------------------*/
 /* Estilos para el Contenido principal */
 .main_contact{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    min-height: 500px;
+    /* min-height: 500px; */
     align-items: center;
     justify-items: center;
     background: linear-gradient(#9cc45c 10%, #08cac1 100%);
@@ -496,7 +503,9 @@ textarea{
 }.img_contact{
     width: 100%;
 }
+/* ------------------------------------------------------------------------------ */
 /* ---------------------------- Estilos para el Footer ------------------------ */
+/* ------------------------------------------------------------------------------ */
 /* Estilos para el contenedor del footer */
 .footer_container{
     display: flex;
@@ -528,11 +537,20 @@ textarea{
     font-size: 30px;
     color: #9cc45c;
 }
-
-
-
-/*Media para el modo responsive*/
-
+/* ------------------------------------------------------------------------------ */
+/* ------------------------Media para el modo responsive------------------------- */
+/* ------------------------------------------------------------------------------ */
+/*Estilos para galeria modo movile*/
+@media screen and (max-width:400px){
+    .galeria{
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+    .close{
+        top: 20px;
+        right: 20px;
+    }
+}
+/*Estilos para la navegacion*/
 @media (min-width:768px) {
 
     .nav_container{
@@ -576,51 +594,26 @@ textarea{
     .home_img_container{
         grid-row: 1/2;
     }
+    /*Estilos para galeria modo movile*/
+    .light-box img {
+        width: 85vw;
+        max-height: 100vh;
+    }
 }
 /*Media queries para acerca_de.html*/
 @media(max-width:1200px){
-    .main_about{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content;
-        text-align: center;
-    }
-    .img_about video{
-        width: 900px;
-    }
-    /*Media queries para eventos.html*/
-    .main_blog{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content;
-        text-align: center;
-    }
+    .main_about,
+     /*Media queries para eventos.html*/
+    .main_blog,
     .section_container_blog,
-    .section_col_blog{
-        grid-template-columns: 1fr;
-        grid-template-rows: max-content max-content;
-        text-align: center;
-    }
+    .section_col_blog,
     /*Media queries para contacto.html*/
     .main_contact{
         grid-template-columns: 1fr;
         grid-template-rows: max-content max-content;
         text-align: center;
     }
-}
-/*Estilos para galeria modo movile*/
-@media screen and (max-width:900px){
-    .light-box img {
-        width: 85vw;
-        max-height: 100vh;
-    }
-}
-
-@media screen and (max-width:400px){
-    .galeria{
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    }
-
-    .close{
-        top: 20px;
-        right: 20px;
+    .img_about video{
+        width: 900px;
     }
 }
