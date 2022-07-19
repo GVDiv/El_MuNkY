@@ -73,7 +73,7 @@ header{
     align-content: center;
     gap: 2em;
     padding-left: 5%;
-    min-width: 300px;
+    min-width: 320px;
 
     transform: var(--state-bg);
     transition: .3s transform;
@@ -130,7 +130,7 @@ header{
 .main_home{
 
     display: grid;
-    /* gap: 2em; */
+    padding-top: 20px;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-items: center;
@@ -140,9 +140,13 @@ header{
 }
 /* Estilos para el contenedor de info */
 .info_home{
-    order: 1;
-    padding: 20px 20px;
-    text-align: center;
+    width: 90%;
+    gap: 10px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
 }
 /* Estilos para el logo o firma del dibujante */
 .name_home{
@@ -178,18 +182,19 @@ header{
 /* Estilos para la Imagen "Ojo ojo" */
 .home_img_container{
     order: 2;
-    text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .home_img{
-   width: 60%;
+   width: 65%;
 }
 /*----------------------------------------------------------------------------*/
 /* ---------------------- Estilos para acerca_de.html ----------------------- */
 /*----------------------------------------------------------------------------*/
 /* Estilos para el Contenido principal */
 .main_about{
-    min-height: 500px;
-    min-width: 300px;
+    /* min-height: 500px;
+    min-width: 300px; */
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     padding-top: 20px;
@@ -512,7 +517,7 @@ textarea{
     flex-direction: column;
     align-items: center;
     background-color: #000000 ;
-    height: 100px;
+    height: 110px;
 
     grid-area: footer;
 }
@@ -587,7 +592,7 @@ textarea{
         text-align: center;
     }
     .home_img{
-        max-width: 500px;
+        max-width: 320px;
         display: block;
         margin: auto;
     }
