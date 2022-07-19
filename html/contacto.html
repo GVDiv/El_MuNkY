@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/css/contacto.css">
+    <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <div class="main_container">
@@ -37,30 +37,30 @@
                 </ul>
                 <!-- Boton de menu responsive -->
                 <a href="#nav" class="nav_menu">
-                    <img src="/css/img/menu.svg" class="nav_icon" alt="">
+                    <img src="/assets/menu.svg" class="nav_icon" alt="">
                 </a>
                 <a href="#" class="nav_close">
-                    <img src="/css/img/close.svg" class="nav_icon" alt="">
+                    <img src="/assets/close.svg" class="nav_icon" alt="">
                 </a>
             </nav>
         </header>
         <!-- Contenido principal de contacto -->
-        <main>
+        <main class="main_contact">
         <!-- Seccion del formulario contacto -->
-            <div class="section_container">
+            <div class="section_container_contact">
                 <section class="section_contacto">
                     <form class="form">
-                        <h1>Contacto</h1>
-                        <input type="text" placeholder="Nombre">
-                        <input type="text" placeholder="Apellido">
-                        <input type="email" placeholder="email">
-                        <input type="text" placeholder="Asunto">
+                        <h1 class="title_contact">Contacto</h1>
+                        <input class="input_contact" type="text" placeholder="Nombre">
+                        <input class="input_contact" type="text" placeholder="Apellido">
+                        <input class="input_contact" type="email" placeholder="email">
+                        <input class="input_contact" type="text" placeholder="Asunto">
                         <textarea name="comentario" id="coment" cols="20" rows="10"></textarea>
                         <input class="btn_enviar" type="submit">
                     </form>
                 </section>
                 <!-- Seccion de redes sociales -->
-                <h2>Sigueme en</h2>
+                <h2 class="redes_contact">Sigueme en</h2>
                 <section class="section_redes">
                     <a class="social_link" href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
                     <a class="social_link" href="https://www.instagram.com/el.munky/" target="_blank"><i class="fa fa-instagram"></i></a>
@@ -70,16 +70,16 @@
                 </section>
             </div>
 
-            <div class="info_container">
+            <div class="info_contact">
                 <!-- Imagen de fondo -->
-            <figure class="img_container">
-                <img src="https://drive.google.com/uc?export=download&id=1NDvrmCvXw16dDJM_yOaoPjyy4L302rAa" alt="Tenta-Skull">
+            <figure class="img_container_contact">
+                <img class="img_contact" src="https://drive.google.com/uc?export=download&id=1NDvrmCvXw16dDJM_yOaoPjyy4L302rAa" alt="Tenta-Skull">
             </figure>
             <!-- Seccion del creador de la pagina -->
-            <section class="section_autor">
-                <span>Este sitio web fue desarrollado por:</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic sequi aliquid, quis quia quos adipisci, reiciendis debitis nulla consequatur temporibus ex voluptatibus maxime numquam accusantium odit ad. Est, illum.</p>
-                <a href="#">Portfolio</a>
+            <section class="section_autor_contact">
+                <span class="title_autor_contact">Este sitio web fue desarrollado por:</span>
+                <p class="text_autor_contact">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque hic sequi aliquid, quis quia quos adipisci, reiciendis debitis nulla consequatur temporibus ex voluptatibus maxime numquam accusantium odit ad. Est, illum.</p>
+                <a href="#" class="contact_link">Portfolio</a>
             </section>
             </div>
             
