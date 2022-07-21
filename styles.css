@@ -187,6 +187,16 @@ header{
 }
 .home_img{
    width: 65%;
+   animation: rotation 15s infinite linear;
+}
+/*Efecto de rotacion para la imagen del inicio*/
+@keyframes rotation{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+    }
 }
 /*----------------------------------------------------------------------------*/
 /* ---------------------- Estilos para acerca_de.html ----------------------- */
